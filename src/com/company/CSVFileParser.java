@@ -5,7 +5,7 @@ import com.opencsv.CSVReader;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-public class CSVFileParser extends DataParser implements Runnable{
+public class CSVFileParser extends DataParser{
 
     private enum colNames{name,designation,salary,experience}
 
@@ -55,6 +55,11 @@ public class CSVFileParser extends DataParser implements Runnable{
         String[] datas = line.split(",");
         try {
 
+            if(!datas[colNames.salary.ordinal()].matches("[0-9]+"))
+            {
+                throw new InvalidDataTypeException("Salary should be Number");
+            }
+
             Employee emp = new Employee(
                     datas[colNames.name.ordinal()],
                     datas[colNames.designation.ordinal()],
@@ -64,7 +69,7 @@ public class CSVFileParser extends DataParser implements Runnable{
             return  emp;
 
         }catch (Exception e){
-//            e.printStackTrace();
+            e.printStackTrace();
             return null;
         }
 

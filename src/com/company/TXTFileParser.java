@@ -2,7 +2,7 @@ package com.company;
 
 import java.io.*;
 
-public class TXTFileParser extends DataParser  implements Runnable  {
+public class TXTFileParser extends DataParser {
 
     private enum colNames{name,designation,salary,experience}
 
@@ -34,6 +34,10 @@ public class TXTFileParser extends DataParser  implements Runnable  {
     private Employee mapEmployeeData(String line){
         String[] datas = line.split(",");
         try {
+            if(!datas[colNames.salary.ordinal()].matches("[0-9]+"))
+            {
+                throw new InvalidDataTypeException("Salary should be Number");
+            }
 
             Employee emp = new Employee(
                     datas[colNames.name.ordinal()],
@@ -44,7 +48,7 @@ public class TXTFileParser extends DataParser  implements Runnable  {
             return  emp;
 
         }catch (Exception e){
-//            e.printStackTrace();
+            e.printStackTrace();
             return null;
         }
     }

@@ -5,11 +5,9 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import java.io.FileReader;
-import java.util.Scanner;
 
-public class JSONFileReader extends DataParser implements Runnable {
+public class JSONFileReader extends DataParser{
 
-    private enum colNames{name,designation,salary,experience}
     @Override
     public void run() {
         try {
@@ -21,6 +19,7 @@ public class JSONFileReader extends DataParser implements Runnable {
                 Employee emp =mapEmployeeData(data);
                 if (emp != null){
                     addEmployee(emp);
+                }else{
                 }
             }
 
@@ -28,8 +27,14 @@ public class JSONFileReader extends DataParser implements Runnable {
             e.printStackTrace();
         }
     }
-    private Employee mapEmployeeData(JSONObject row){
+    private Employee mapEmployeeData(JSONObject row) throws DataFormatMismatchException {
         try {
+
+            if(!row.get("salary").toString().matches("[0-9]+"))
+            {
+                throw new InvalidDataTypeException("Salary should be Number");
+            }
+
             Employee emp = new Employee(
                     (String) row.get("name"),
                     (String) row.get("designation"),
@@ -40,7 +45,7 @@ public class JSONFileReader extends DataParser implements Runnable {
 
         }catch (Exception e){
             e.printStackTrace();
-            return null;
+            throw new DataFormatMismatchException("The row data format is not matched");
         }
     }
 }

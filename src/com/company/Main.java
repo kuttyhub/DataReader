@@ -19,7 +19,5 @@ public class Main {
             System.out.println(e.getKey() + " = "+ e.getValue()+"\n");
 
         }
-
-//        db.parseData("json",basePath+"Employee_json.json");
     }
 }
