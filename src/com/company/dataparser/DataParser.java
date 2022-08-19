@@ -1,4 +1,6 @@
-package com.company;
+package com.company.dataparser;
+
+import com.company.Employee;
 
 import java.io.File;
 import java.util.ArrayList;

@@ -2,21 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9391423-4366-4c36-9b9a-16d606526f0d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/DataFormatMismatchException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/InvalidDataTypeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Employee_json.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/opencsv_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/opencsv_3_8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataReader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DataReader.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DataReader/com/company/CSVFileParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataReader/com/company/CSVFileParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataReader/com/company/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataReader/com/company/DataBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DataReader/com/company/DataParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataReader/com/company/DataParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataReader/com/company/JSONFileReader$colNames.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataReader/com/company/JSONFileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataReader/com/company/JSONFileReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataReader/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataReader/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataReader/com/company/TXTFileParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataReader/com/company/TXTFileParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/CSVFileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CSVFileParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/DataParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DataParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/JSONFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/JSONFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/TXTFileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TXTFileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/CSVFileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/dataparser/CSVFileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/DataFormatMismatchException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/custom_exception/DataFormatMismatchException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/DataParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/dataparser/DataParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Employee_csv.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee_csv.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Employee_txt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee_txt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/EmptyFileException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/custom_exception/EmptyFileException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/FileTypeNotMatchedExecption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/custom_exception/FileTypeNotMatchedExecption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/InvalidDataTypeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/custom_exception/InvalidDataTypeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/JSONFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/dataparser/JSONFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/TXTFileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/dataparser/TXTFileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/UnknownFileTypeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/custom_exception/UnknownFileTypeException.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +34,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="120">
+              <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataBase.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataBase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/DataBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="436">
+              <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#273#274#0" expanded="true" />
@@ -54,23 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvalidDataTypeException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/InvalidDataTypeException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
-              <folding>
-                <element signature="e#162#163#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="JSONFileReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/JSONFileReader.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/dataparser/JSONFileReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="42" selection-end-column="8" />
+            <state relative-caret-position="168">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,24 +69,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataFormatMismatchException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/DataFormatMismatchException.java">
+      <file leaf-file-name="DataParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/dataparser/DataParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+            <state relative-caret-position="105">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding>
-                <element signature="e#168#169#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataParser.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/DataParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-              <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#265#266#0" expanded="true" />
                 <element signature="e#292#293#0" expanded="true" />
                 <element signature="e#330#331#0" expanded="true" />
@@ -112,10 +92,10 @@
         </entry>
       </file>
       <file leaf-file-name="CSVFileParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/CSVFileParser.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/dataparser/CSVFileParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+            <state relative-caret-position="-672">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,26 +103,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TXTFileParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/TXTFileParser.java">
+      <file leaf-file-name="EmptyFileException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/custom_exception/EmptyFileException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Employee_txt.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Employee_txt.txt">
+      <file leaf-file-name="TXTFileParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/dataparser/TXTFileParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" selection-start-column="23" selection-end-column="23" />
+            <state relative-caret-position="60">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Employee_json.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Employee_json.json">
+        <entry file="file://$PROJECT_DIR$/src/Employee_json.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="1" selection-start-column="1" selection-end-column="1" />
@@ -178,23 +158,24 @@
         <option value="$PROJECT_DIR$/src/com/company/Employee.java" />
         <option value="$PROJECT_DIR$/src/com/company/UnknownFileTypeException.java" />
         <option value="$PROJECT_DIR$/src/com/company/FileTypeNotMatchedExecption.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/DataFormatMismatchException.java" />
         <option value="$PROJECT_DIR$/src/com/company/Employee_txt.txt" />
         <option value="$PROJECT_DIR$/src/com/company/InvalidDataTypeException.java" />
         <option value="$PROJECT_DIR$/src/com/company/TXTFileParser.java" />
-        <option value="$PROJECT_DIR$/src/com/company/DataBase.java" />
-        <option value="$PROJECT_DIR$/src/com/company/JSONFileReader.java" />
-        <option value="$PROJECT_DIR$/src/com/company/CSVFileParser.java" />
         <option value="$PROJECT_DIR$/src/com/company/DataParser.java" />
+        <option value="$PROJECT_DIR$/src/com/company/CSVFileParser.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/custom_exception/InvalidDataTypeException.java" />
+        <option value="$PROJECT_DIR$/src/com/company/JSONFileReader.java" />
+        <option value="$PROJECT_DIR$/src/com/company/DataBase.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="860" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="19" />
+    <option name="y" value="19" />
+    <option name="width" value="1402" />
+    <option name="height" value="862" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -286,7 +267,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="20" width="1400" height="860" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -297,12 +278,12 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32896462" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31257784" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32896462" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32896462" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533137" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24606581" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -348,21 +329,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DataFormatMismatchException.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/custom_exception/DataFormatMismatchException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
           <folding>
-            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DataParser.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/dataparser/DataParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="41" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="41" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#265#266#0" expanded="true" />
             <element signature="e#292#293#0" expanded="true" />
             <element signature="e#330#331#0" expanded="true" />
@@ -377,14 +360,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/TXTFileParser.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/dataparser/TXTFileParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="41" column="62" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/CSVFileParser.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/dataparser/CSVFileParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
@@ -394,17 +377,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Employee_csv.csv">
+    <entry file="file://$PROJECT_DIR$/src/Employee_csv.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Employee_json.json">
+    <entry file="file://$PROJECT_DIR$/src/Employee_json.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/JSONFileReader.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/dataparser/JSONFileReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
@@ -422,17 +405,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/JSONFileParser.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/EmptyFileException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-          <folding>
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#150#151#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -458,26 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/UnknownFileTypeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
-          <folding>
-            <element signature="e#162#163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/FileTypeNotMatchedExecption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
-          <folding>
-            <element signature="e#168#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Downloads/json-simple-1.1.1.jar!/org/json/simple/parser/JSONParser.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
@@ -485,97 +437,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Employee_csv.csv">
+    <entry file="file://$PROJECT_DIR$/src/Employee_csv.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Employee_json.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DataFormatMismatchException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
-          <folding>
-            <element signature="e#168#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Employee_txt.txt">
+    <entry file="file://$PROJECT_DIR$/src/Employee_txt.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="23" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Employee_json.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="120">
+          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DataBase.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/custom_exception/FileTypeNotMatchedExecption.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/InvalidDataTypeException.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/custom_exception/UnknownFileTypeException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/custom_exception/DataFormatMismatchException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/custom_exception/InvalidDataTypeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
             <element signature="e#162#163#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/JSONFileReader.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/dataparser/DataParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="42" selection-end-column="8" />
+        <state relative-caret-position="105">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/CSVFileParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/TXTFileParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DataParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding>
             <element signature="e#265#266#0" expanded="true" />
             <element signature="e#292#293#0" expanded="true" />
             <element signature="e#330#331#0" expanded="true" />
@@ -586,6 +531,52 @@
             <element signature="e#539#540#0" expanded="true" />
             <element signature="e#602#603#0" expanded="true" />
             <element signature="e#644#645#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/dataparser/JSONFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/dataparser/TXTFileParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/custom_exception/EmptyFileException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/dataparser/CSVFileParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-672">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/DataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -654,7 +645,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>json-simple-1.1.1</last-edited>
+          <last-edited>opencsv-3.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

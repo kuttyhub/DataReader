@@ -1,12 +1,16 @@
-package com.company;
+package com.company.dataparser;
 
+import com.company.Employee;
+import com.company.custom_exception.DataFormatMismatchException;
+import com.company.custom_exception.InvalidDataTypeException;
+import com.company.dataparser.DataParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import java.io.FileReader;
 
-public class JSONFileReader extends DataParser{
+public class JSONFileReader extends DataParser {
 
     @Override
     public void run() {

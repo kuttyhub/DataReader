@@ -1,39 +1,19 @@
-package com.company;
+package com.company.dataparser;
 
-import com.opencsv.CSVReader;
+import com.company.Employee;
+import com.company.custom_exception.InvalidDataTypeException;
+import com.company.dataparser.DataParser;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
 
-public class CSVFileParser extends DataParser{
+public class TXTFileParser extends DataParser {
 
     private enum colNames{name,designation,salary,experience}
 
-    private boolean haveTitle;
-
-    public CSVFileParser() {
-        this.haveTitle = true;
-    }
-
     @Override
     public void run() {
-        CSVReader reader = null;
-        try
-        {
-//            reader = new CSVReader(new FileReader(getFile()));
-//            String [] nextLine;
-//            while ((nextLine = reader.readNext()) != null)
-//            {
-//                if(isHaveTitle()){
-//                    setHaveTitle(false);
-//                    continue;
-//                }
-//                Employee emp = mapEmployeeData(nextLine);
-//                if (emp != null){
-//                    addEmployee(emp);
-//                }
-//            }
-//            reader.close();
+
+        try {
             BufferedReader bf = new BufferedReader(new FileReader(getFile()));
             String line ;
 
@@ -44,17 +24,20 @@ public class CSVFileParser extends DataParser{
                 }
             }
             bf.close();
-        }
-        catch (Exception e)
-        {
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            setEmployees(null);
+
+        } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
     private Employee mapEmployeeData(String line){
         String[] datas = line.split(",");
         try {
-
             if(!datas[colNames.salary.ordinal()].matches("[0-9]+"))
             {
                 throw new InvalidDataTypeException("Salary should be Number");
@@ -72,16 +55,5 @@ public class CSVFileParser extends DataParser{
             e.printStackTrace();
             return null;
         }
-
-
-
-    }
-
-    public boolean isHaveTitle() {
-        return haveTitle;
-    }
-
-    public void setHaveTitle(boolean haveTitle) {
-        this.haveTitle = haveTitle;
     }
 }

@@ -1,5 +1,13 @@
 package com.company;
 
+import com.company.custom_exception.EmptyFileException;
+import com.company.custom_exception.FileTypeNotMatchedExecption;
+import com.company.custom_exception.UnknownFileTypeException;
+import com.company.dataparser.CSVFileParser;
+import com.company.dataparser.DataParser;
+import com.company.dataparser.JSONFileReader;
+import com.company.dataparser.TXTFileParser;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -30,7 +38,7 @@ public class DataBase {
 
     public void parseData(String type,String fileName){
 
-        String basePath = System.getProperty("user.dir") + "/src/com/company/";
+        String basePath = System.getProperty("user.dir") + "/src/";
 
         try {
             if (!types.containsKey(type)){
@@ -46,14 +54,13 @@ public class DataBase {
             DataParser parser = types.get(type);
             parser.setFile(file);
 
-            Thread thread = new Thread((Runnable)parser);
+            Thread thread = new Thread(parser);
             thread.start();
             thread.join();
 
             tables.put(type,parser.getEmployees());
 
         }catch (Exception e){
-            System.out.println("Hello ...!");
             e.printStackTrace();
         }
     }
