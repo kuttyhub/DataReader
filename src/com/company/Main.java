@@ -1,23 +1,49 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import PostgresDB.PostgresDB;
+import Models.CustomFile;
+import PostgresDB.PostgresController;
 
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        DataBase db = new DataBase();
-        db.parseData("txt","Employee_txt.txt");
-        db.parseData("csv","Employee_csv.csv");
-        db.parseData("json","Employee_json.json");
+
+        String DB_NAME = "quinbay";
+        PostgresDB postgresDB = PostgresDB.createInstance(DB_NAME);
+        CustomFile[] files = {
+                new CustomFile("txt","Employee_txt.txt"),
+                new CustomFile("csv","Employee_csv.csv"),
+                new CustomFile("json","Employee_json.json"),
+        };
+
+        Thread[] threadPool = new Thread[files.length];
+
+        try{
+            postgresDB.connectDB();
+            PostgresController postgrsController = new PostgresController(postgresDB);
+
+            postgrsController.createTable();
 
 
-        HashMap<String,ArrayList<Employee>> tables =  db.getTables();
-        for(Map.Entry<String,ArrayList<Employee>> e : tables.entrySet()){
-            System.out.println(e.getKey() + " = "+ e.getValue()+"\n");
 
+            for (int i=0 ;i<files.length;i++){
+                Thread parser = threadPool[i] = postgrsController.getParseThread(files[i].getType(),files[i].getFilename());
+                parser.start();
+            }
+            for (int i = 0; i < files.length; i++) {
+                threadPool[i].join();
+            }
+
+            postgrsController.addRatingColumn();
+            postgrsController.populateRatingColumn(1,5);
+            postgrsController.updateSalaryBasedOnRating();
+            postgrsController.getCountOfHigerExperience(4);
+
+        }catch (Exception e){
+            e.printStackTrace();
         }
+
+        postgresDB.closeAllConnections();
     }
+
 }

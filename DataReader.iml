@@ -18,5 +18,15 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="opencsv-3.8" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/postgresql-42.4.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="postgresql-42.4.2" level="project" />
   </component>
 </module>
